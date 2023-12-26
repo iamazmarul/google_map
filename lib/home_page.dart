@@ -59,33 +59,6 @@ class _HomePageState extends State<HomePage> {
                 LatLng(22.715527, 90.374472),
               ])
         },
-        polygons: {
-          const Polygon(
-              polygonId: PolygonId("test"),
-              visible: true,
-              fillColor: Colors.orange,
-              strokeColor: Colors.red,
-              strokeWidth: 6,
-              points: [
-                LatLng(22.710361, 90.363845),
-                LatLng(22.715527, 90.374472),
-                LatLng(22.716834, 90.373489),
-                LatLng(22.711932, 90.379227),
-              ]),
-        },
-        circles: {
-          Circle(
-              circleId: CircleId("test2"),
-              center: LatLng(22.715527, 90.374472),
-              radius: 100,
-              fillColor: Colors.blueAccent.shade400,
-              strokeColor: Colors.green,
-              strokeWidth: 5,
-              consumeTapEvents: true,
-              onTap: () {
-                print("Circle");
-              })
-        },
       ),
     );
   }
