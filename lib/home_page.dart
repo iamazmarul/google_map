@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _initLocationService() async {
-    await _location.requestPermission(); // Request location permissions
+    await _location.requestPermission();
     _location.onLocationChanged.listen((LocationData locationData) {
       _currentLocation = locationData;
       _updateMapLocation();
