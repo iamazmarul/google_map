@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
   void _updateMapLocation() {
     if (_currentLocation != null && _mapController != null) {
       final newLatLng =
-          LatLng(_currentLocation!.latitude!, _currentLocation!.longitude!);
+      LatLng(_currentLocation!.latitude!, _currentLocation!.longitude!);
       _markers.clear();
       _polylines.clear();
 
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: GoogleMap(
         initialCameraPosition:
-            const CameraPosition(target: LatLng(0, 0), zoom: 15),
+        const CameraPosition(target: LatLng(0, 0), zoom: 15),
         onMapCreated: (controller) {
           _mapController = controller;
         },
