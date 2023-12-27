@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   final Location _location = Location();
   final List<LatLng> _polylineCoordinates = [];
   final Set<Polyline> _polylines = {};
-  Set<Marker> _markers = {};
+  final Set<Marker> _markers = {};
   LatLng? _previousLatLng;
   Timer? _locationTimer;
 
